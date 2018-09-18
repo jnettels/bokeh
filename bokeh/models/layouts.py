@@ -213,7 +213,7 @@ class Row(Box):
     that is a sequence, or using the ``children`` keyword argument.
     '''
 
-    cols = Either(QuickTrackSizing, Dict(IntOrString, ColSizing), default="auto", help="""
+    cols = Either(QuickTrackSizing, Dict(IntOrString, ColSizing), default="min", help="""
     """)
 
 class Column(Box):
@@ -223,7 +223,7 @@ class Column(Box):
     that is a sequence, or using the ``children`` keyword argument.
     '''
 
-    rows = Either(QuickTrackSizing, Dict(IntOrString, RowSizing), default="auto", help="""
+    rows = Either(QuickTrackSizing, Dict(IntOrString, RowSizing), default="min", help="""
     """)
 
 
